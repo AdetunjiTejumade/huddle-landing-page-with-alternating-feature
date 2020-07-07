@@ -1,0 +1,44 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --gray-blue:hsl(208, 11%, 55%);
+}
+body{
+    font-size: 18px;
+}
+.bg-pale-cyan{
+    background-color: var(--pale-cyan);
+}
+.lg-txt{
+    font-weight: 600;
+}
+.sm-txt{
+    font-weight: 400;
+}
+.xl-txt{
+    font-weight: 700;
+}
+.header-bg{
+    background-image: url(../images/bg-hero-mobile.svg);
+}
+.bg-pink{
+    background-color: var(--pink);
+}
+.bg-dark-cyan{
+    background-color: var(--dark-cyan);
+}
+.text-gray-blue{
+    color: rgb(202, 209, 215);
+}
+.logo-white{
+    filter: brightness(0) invert(1);
+}
+
+li{
+    list-style: none;
+}
+
+.list li{
+    margin-bottom: 1rem;
+}

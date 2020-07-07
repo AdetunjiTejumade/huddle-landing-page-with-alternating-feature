@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        hr {
+            margin: 0 auto;
+            width: 30px;
+        }
+
+        /* nav menu */
+        .lg-nav a:hover,
+        .lg-nav a:focus {
+            color: var(--base-color);
+            text-decoration: underline solid;
+        }
+
+        /* overlay nav */
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-x: hidden;
+            transition: 0.3s;
+
+
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            display: block;
+            color: white;
+            padding: 8px;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: var(--base-color);
+            text-decoration: underline solid;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body class="" style="background-color: rgb(34, 40, 49);">
+    <div class="pt-6 px-6 bg-blue-500 pb-2"
+        style="background: linear-gradient(to right, rgb(47, 45, 35), rgb(40, 49, 62));">
+        <div class="header flex justify-between">
+            <div>
+                <h1 class="text-xl font-semibold "
+                    style="color: rgb(239, 187, 53); text-shadow: 0px 1px 7px rgba(239, 187, 57);"> ADETUNJI TEJUMADE
+                </h1>
+            </div>
+            <!-- <div class="nav text-center pt-6">
+                <ul class="inline flex justify-center text-black font-medium">
+                   
+                    <li class=" bg-yellow-400 mr-3 px-3">
+                        About
+                    </li>
+                    <li class=" bg-yellow-400 mr-3 px-3">
+                        Works
+                    </li>
+                    <li class=" bg-yellow-400 px-3">
+                        Contact
+                    </li>
+                </ul>
+            </div> -->
+            <!-- <li class=" bg-yellow-400 mr-3 px-3">
+                        Home
+                    </li> -->
+            <div>
+                <a class="text-white text-xl font-semibold" style="display: none;">☰</a>
+            </div>
+
+            <!-- Overlay nav on small screens -->
+
+            <div id="smallNav" class="overlay">
+                <a href="javascript:void(0)" onclick="closeNav()"" class="closebtn"">&times;</a>
+
+
+                <div class="overlay-content font-700 text-xl">
+                    <a class="" href="#header">Home</a>
+                    <a class="" href="#about">About</a>
+                    <a class="" href="#movies">Movies</a>
+                    <a href="#reservation">Reservation</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="about text-center mt-16 px-6">
+        <h1 class="text-3xl" style="color: rgb(239, 187, 53);">HEY THERE, I'M TEJU- WEB DEVELOPER</h1>
+        <hr class="border-2 border-yellow-600 mt-3 mb-3">
+
+        <div class="mt-12 text-white">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laborum dolores impedit, consectetur
+                ullam repellendus. Explicabo quae odit culpa, eveniet perferendis quos et deleniti temporibus, adipisci
+                maxime libero dolorum porro accusantium sint rem vitae nostrum dolor excepturi aliquam unde cupiditate!
+            </p>
+        </div>
+        <footer class="m-auto mt-32 w-64">
+            <div class="social-links">
+                <ul class="flex justify-center text-white justify-between">
+
+                    <!-- <li class="border-2 w-10 h-10 pt-2 rounded-full border-yellow-400 w-">T</li>
+                    <li class="border-2 w-10 h-10 pt-2 rounded-full border-yellow-400 ">G</li>
+                    <li class="border-2 w-10 h-10 pt-2 rounded-full border-yellow-400 ">L</li> -->
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
