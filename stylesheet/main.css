@@ -42,3 +42,21 @@ li{
 .list li{
     margin-bottom: 1rem;
 }
+.social-links a{
+    border: white 1px solid;
+    border-radius: 50%;
+}
+.community{
+        /* z-index: 3;
+        position: relative;  */
+        margin-bottom: -7em;
+        position: relative;
+        z-index: 1;
+}
+
+.footer{
+   
+}
+body{
+    position: relative;
+}
