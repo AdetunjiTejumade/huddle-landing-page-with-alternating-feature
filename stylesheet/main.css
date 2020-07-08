@@ -74,8 +74,16 @@ h1{
     .header-bg{
         background-image: url(../images/bg-hero-desktop.svg);
     }
-    .grid{
+    .header-grid{
         display: grid;
         grid-template-columns: 45% 55%;
     }
+    .w-l-30{
+        width: 35rem;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 40% 10% 10% 30%;
+    }
 }
+
