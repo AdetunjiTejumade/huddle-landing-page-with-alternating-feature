@@ -22,6 +22,9 @@ body{
 .header-bg{
     background-image: url(../images/bg-hero-mobile.svg);
 }
+
+
+
 .bg-pink{
     background-color: var(--pink);
 }
@@ -59,4 +62,20 @@ li{
 }
 body{
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    outline: none;
+}
+h1{
+    font-family:'Poppins', sans-serif;
+}
+@media screen and (min-width: 768px){
+    .header-bg{
+        background-image: url(../images/bg-hero-desktop.svg);
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 45% 55%;
+    }
 }
